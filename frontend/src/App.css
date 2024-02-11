@@ -1,0 +1,62 @@
+.note-list{
+    min-height: 400px;
+    width: 800px;
+    background: #37474f;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.add-detail-div{
+    height: 400px;
+    width: 600px;
+    margin: 30px auto;
+    background: #e0f2f1;
+    text-align: center;
+    padding: 50px;
+    
+    font-size: 20px;
+}
+
+
+
+
+/* noteadd css  */
+
+
+.main-div{
+    height: 400px;
+    width: 400px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+    
+
+}
+.h3-text{
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+.line-breaker{
+    margin-bottom: 30px;
+    
+}
+
+.btn-add{
+    width: 100%;
+      
+}
