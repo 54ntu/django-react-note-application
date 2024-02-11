@@ -60,3 +60,16 @@ input{
     width: 100%;
       
 }
+
+
+
+.note-detail{
+    max-height: 400px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+.note-detail-btn{
+    margin-right: 3px;
+}
