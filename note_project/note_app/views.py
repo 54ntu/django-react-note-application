@@ -23,21 +23,21 @@ def homePage(request):
 @csrf_exempt
 def detailPage(request,pk):
         try:
-                data = noteModel.objects.get(pk=pk)
+                obj1 = noteModel.objects.get(pk=pk)
         except noteModel.DoesNotExist:
                 return HttpResponse("data not found")
         
         if request.method =="GET":
-                serializer = noteSerializer(data)
+                serializer = noteSerializer(obj1)
                 return JsonResponse(serializer.data)
         elif request.method =="PUT":
                 response = JSONParser().parse(request)
-                serializer = noteSerializer(data,data=response)
+                serializer = noteSerializer(obj1,data=response)
                 if serializer.is_valid():
                         serializer.save()
                         return JsonResponse(serializer.data,status=200)
                 return HttpResponse(serializer.errors)
         elif request.method =="DELETE":
-                data.delete()
+                obj1.delete()
                 return HttpResponse('data deleted successfully')
                 

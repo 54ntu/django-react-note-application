@@ -27,7 +27,7 @@ const NoteList = () => {
                 <tr>
                 <th>S.N.</th>
                 <th>Title</th>
-                <th colSpan={4}>Action</th>
+                <th colSpan={2}>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,7 +38,6 @@ const NoteList = () => {
                         <td>{val.title}</td>
                         <td ><a href={`/detail/${val.id}`} className="btn btn-primary btn-sm">View</a></td>
                         <td ><a href={`/update/${val.id}`} className="btn btn-primary btn-sm">Edit</a></td>
-                        <td ><a href="" className="btn btn-primary btn-sm">Delete</a></td>
 
                         </tr>
 
